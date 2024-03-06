@@ -1,0 +1,28 @@
+clone the respective branch
+git clone http path
+git branch
+git checkout main
+git pull main
+git pull to min branch
+git branch branchname which you want to create
+or git checkout -b branchname > it will create branch and switch to the created new branch
+checkout to that branch
+and now create the new branch and do the nacessary changes
+and then use git status
+git status
+git add .
+git add nameof file
+git add . -> will ad all file
+git add -a
+git commit -m "messagename"
+git commit -m " commit-Message "
+git push origin branchname 
+git push origin branchname
+git commit -m "first commit"
+git push origin Branch name which you have created- to push in the respective branch
+and trigger the flow
+if your workflow is depedent on another workflow then first trigger the create workflow
+- after that take pull 
+Ask ------ git pull branch name-------- ask 
+git restore filename will discard the changes 
+git restore filename will discard the changes

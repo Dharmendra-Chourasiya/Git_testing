@@ -1,0 +1,30 @@
+Kubernetes (K8s) is a powerful container orchestration platform, and there are several important commands you'll use frequently to interact with and manage your Kubernetes clusters. Here are some of the essential K8s commands:
+kubectl get: This command is used to retrieve information about various Kubernetes resources. For example:
+kubectl get pods lists all pods in the current namespace.
+kubectl get deployments lists all deployments.
+kubectl get services lists all services.
+gcloud auth login
+gcloud config set project PROJECT_ID
+gcloud config set project jcpenny-nonprod
+kubectl config current-context
+connect with aks -> gcloud container clusters get-credentials jcpenney-qa --zone us-central1-a --project jcpenny-nonprod
+kubectl apply -f yas-atp-publisher-statefulset.yaml
+kubectl get deployment
+kubectl get statefulset -n jcpenney-qa
+kubectl get pods
+kubectl describe pod demo1-7b644b8478-hqnp2
+kubectl describe statefulset yas-atp-publisher -n jcpenney-qa  does not show the event
+kubectl describe pod yas-atp-publisher-0 -n jcpenney-qa    show the event
+kubectl get pods -n jcpenney-qa   show all the pods with the jcpenney-qa name-space
+kubectl logs -f yas-atp-publisher-0 -n jcpenney-qa
+kubectl logs -f yas-atp-publisher-0 -n jcpenney-qa -c yas-atp-publisher
+kubectl apply -f configmap-yas-atp-publisher.yaml
+kubectl get deployment
+kubectl get configmap -n jcpenney-qa
+kubectl describe cm dashboard-staging-to-prod-config -n rei-qa-namespace
+kubectl logs -f dashboard-staging-to-prod-7586c67bc8-s6lv6 -n rei-qa-namespace -c dashboard-staging-to-prod
+after that restart the deployed file  go in action -> replica -> make 0 and save and again make it 1 and save
+Shared in
+
+Dharmendra Chourasiya(you)
+Dharmendra Chourasiya
